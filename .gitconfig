@@ -1,3 +1,17 @@
 [user]
+	email = i.sorokoletov@gmail.com
 	name = Ivan Sorokoletov
-	email = feltramt@gmail.com
+[core]
+	excludesfile = /Users/i.sorokoletov/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/i.sorokoletov/.stCommitMsg
+[merge]
+	conflictstyle = diff3
+[apply]
+	whitespace = nowarn
