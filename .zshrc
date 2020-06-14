@@ -26,8 +26,7 @@ setopt PROMPT_SUBST
 # %D{%d/%m/%y %H:%M:%S} - date
 PROMPT='%{$fg[green]%}% ${PWD} ${vcs_info_msg_0_} %D{%d/%m/%y %H:%M:%S} > %{$reset_color%}%'
 
-alias podopen='pod install && open *.xcworkspace'
+# Load rbenv automatically by appending
+# the following to ~/.zshrc:
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+eval "$(rbenv init -)"
