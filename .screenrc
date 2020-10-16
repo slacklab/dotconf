@@ -1,6 +1,9 @@
+# Status bar
 caption always
-caption string "%{kw}%-w%{wr}%n %t%{-}%+w"
+caption string "%{= kw}%Y-%m-%d;%c %{= kw}%-Lw%{= kG}%{+b}[%n %t]%{-b}%{= kw}%+Lw%1`"
+
 shell -$SHELL
+
 # Enable mouse scrolling and scroll bar history scrolling
 termcapinfo xterm* ti@:te@
 altscreen on
