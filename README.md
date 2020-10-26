@@ -18,5 +18,6 @@
   
   C-a c # create window
 
-  C-a {n,p} # next or previous window
+  C-a {n, p} # next or previous window
   
+  C-a Esc + {C-b, C-f} # previous or next pages
